@@ -1,0 +1,5 @@
+#build docker image/map
+docker build -t windows-anaconda-gpu-tensorflow .
+
+# run docker with gpu 
+docker run --gpus all -it windows-anaconda-gpu-tensorflow
